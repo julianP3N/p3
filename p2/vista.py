@@ -20,7 +20,7 @@ def metodo1 (request):
 
 def metodo2 (request):  #Vista 1  (V1.html)    
    #  plantilla_juan=open("H:/djangoProyectos/p2/p2/plantillas/plantillas1.html")
-    juanPLT=open("H:\djangoProyectos\p2\p2\plantillas\plantillas1.html", encoding="utf-8")
+    juanPLT=open("C:/Users/Asus/Documents/azure template/claseblockchain/p3/p2/plantillas/plantillas1.html", encoding="utf-8")
     juan=Template(juanPLT.read())
     juanPLT.close()
     ctx=Context()
@@ -112,10 +112,10 @@ def metodo4 (request):
     apellido="cadavid"
 
     #ya=datetime.datetime.now()
-    p1=Per("Nombre","apelli")
+    p1=Per("Nombre","apellido")
 
    
-    docExterno=open("H:\djangoProyectos\p2\p2\plantillas\V1.html", encoding="utf8")
+    docExterno=open("C:/Users/Asus/Documents/azure template/claseblockchain/p3/p2/plantillas/V1.html", encoding="utf8")
    # docExterno=open("H:\djangoProyectos\p2\p2\plantillas\plantillas1.html", encoding="utf8")
     a2=Template(docExterno.read())
     docExterno.close()
@@ -125,7 +125,7 @@ def metodo4 (request):
 
 class Per(object):
     
-    def _init_(self, nombre, apellido):
+    def __init__(self, nombre, apellido):
         
         self.nombre=nombre
         
