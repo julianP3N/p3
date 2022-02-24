@@ -91,3 +91,5 @@ while not t.final():
 
 print("Result of the Turing machine calculation:")    
 print(t.get_tape())
+
+##Comentario sadid validar permiso
