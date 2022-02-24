@@ -20,7 +20,7 @@ def metodo1 (request):
 
 def metodo2 (request):  #Vista 1  (V1.html)    
    #  plantilla_juan=open("H:/djangoProyectos/p2/p2/plantillas/plantillas1.html")
-    juanPLT=open("H:\djangoProyectos\p2\p2\plantillas\plantillas1.html", encoding="utf8")
+    juanPLT=open("H:\djangoProyectos\p2\p2\plantillas\plantillas1.html", encoding="utf-8")
     juan=Template(juanPLT.read())
     juanPLT.close()
     ctx=Context()
